@@ -5,85 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-    </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-    <title>모멘텀앱 - 따라만들기</title>
-
-    <script src="index.js"> </script>
+    <title>2023년 버킷리스트</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&family=Hahmlet:wght@400;500;600;700&display=swap');
 
         * {
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-	background-image: url("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbSxmHn%2Fbtq7Z2QCsje%2FTknr8SLxUZFQq2Kow8cKWk%2Fimg.jpg");
-	background-position: center;
-    color: white;
-            }
-
-        .time {
-                font-size: 80px;
-                font-weight: bold;
-        }
-
-        .greeting{
-            font-size: 50px;
-        }
-
-        .todo {
-            font-size: 30px;
-        }
-
-        .author {
-            font-size: 25px;
-            font-style: italic;
-        }
-
-        .main {
-            width: 100vw;
-            height: 80vh;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .quote {
-            width: 100vw;
-            height: 20vh;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            font-family: 'Gothic A1', sans-serif;
+            font-family: 'Hahmlet', serif;
 
         }
 
+        .title {
+            color: white;
+            background-color: tomato;
+            font-size: 24px;
+            padding: 4px 14px;
+            border-radius: 8px;
+        }
 
+        .bg {
+            width: 360px;
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+        }
+
+        .msg {
+            font-weight: bold;
+        }
+
+        .bucket {
+            width: 160px;
+            height: 160px;
+        }
+
+        .img1 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img2 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+            background-size: cover;
+            background-position: center;
+        }
     </style>
-    <script>
-    </script>
+    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
 </head>
 
-<body>
-	<div class="main">
-        <div id="time" class="time">12:00</div>
-        <div class="greeting">Hello, minji!</div>
-        <div class="todo">코딩공부하기!</div>
+<body class="bg-t3 center">
+    <h1 class="title-t4">2023년 신년계획</h1>
+    <p class="msg">올해는 꼭 다 이루자!</p>
+    <div class="row flex-row wrap">
+        <div class="bucket img1-t4 center">자바의 정석 공부하기</div>
+        <div class="bucket img2 center">헬스 등록하기</div>
+        <div class="bucket img2 center">방청소 하기 </div>
+        <div class="bucket img1-t2 center">안드로이드 공부하기</div>
+        <div class="bucket img1-t5 center">스프링 공부하기</div>
+        <div class="bucket img2 center">자소서,이력서 준비하기</div>
+
     </div>
-    <div class="quote">
-        <div id="author" class="author">- 명언의 저자 -</div>
-        <div id="content" class="content">" 명언의 내용 "</div>
-    </div>
+
 </body>
 
 </html>
